@@ -1,0 +1,17 @@
+/POST signup
+    send : name, email, password, number
+    return : message, token
+
+/POST login
+    send : username, password,
+    return : message, token
+
+GET /profile/:userId
+
+GET /userId/feeds
+    return : all blogs created by user
+
+POST /userId/feed
+    send : title, description, tags
+    return : blogs
+
